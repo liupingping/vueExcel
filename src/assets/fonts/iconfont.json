@@ -1,0 +1,156 @@
+{
+  "id": "2455068",
+  "name": "信息通信专业管理",
+  "font_family": "xxtxfont",
+  "css_prefix_text": "xxtx-",
+  "description": "信息通信专业管理",
+  "glyphs": [
+    {
+      "icon_id": "20825857",
+      "name": "审核通过",
+      "font_class": "shenhetongguo",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "20825683",
+      "name": "驳回原因",
+      "font_class": "bohuiyuanyin",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "20825684",
+      "name": "时间",
+      "font_class": "shijian",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "20815937",
+      "name": "合同总额",
+      "font_class": "hetongzonge",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "20815938",
+      "name": "延期合同",
+      "font_class": "yanqihetong",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "20815939",
+      "name": "项目总数",
+      "font_class": "xiangmuzongshu",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "20815940",
+      "name": "合同总数",
+      "font_class": "hetongzongshu",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "20815941",
+      "name": "竣工合同",
+      "font_class": "jungonghetong",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "20815942",
+      "name": "投资金额",
+      "font_class": "touzijine",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "18483317",
+      "name": "bar chart2",
+      "font_class": "barchart2",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "20806538",
+      "name": "平均时长",
+      "font_class": "pingjunshichang1",
+      "unicode": "e6e1",
+      "unicode_decimal": 59105
+    },
+    {
+      "icon_id": "20773252",
+      "name": "最高在线人数",
+      "font_class": "zuigaozaixianrenshu",
+      "unicode": "e6de",
+      "unicode_decimal": 59102
+    },
+    {
+      "icon_id": "20769544",
+      "name": "在线人数",
+      "font_class": "zaixianrenshu",
+      "unicode": "e6df",
+      "unicode_decimal": 59103
+    },
+    {
+      "icon_id": "20768110",
+      "name": "端口2",
+      "font_class": "duankou2",
+      "unicode": "e6d7",
+      "unicode_decimal": 59095
+    },
+    {
+      "icon_id": "20768111",
+      "name": "端口1 17.42.31",
+      "font_class": "duankou1174231",
+      "unicode": "e6d8",
+      "unicode_decimal": 59096
+    },
+    {
+      "icon_id": "20768112",
+      "name": "端口",
+      "font_class": "duankou",
+      "unicode": "e6d9",
+      "unicode_decimal": 59097
+    },
+    {
+      "icon_id": "20768115",
+      "name": "wenjian",
+      "font_class": "wenjian",
+      "unicode": "e6dc",
+      "unicode_decimal": 59100
+    },
+    {
+      "icon_id": "20768116",
+      "name": "端口3",
+      "font_class": "duankou3",
+      "unicode": "e6dd",
+      "unicode_decimal": 59101
+    },
+    {
+      "icon_id": "6985254",
+      "name": "路由器",
+      "font_class": "luyouqi",
+      "unicode": "e65a",
+      "unicode_decimal": 58970
+    },
+    {
+      "icon_id": "10303549",
+      "name": "看板",
+      "font_class": "kanban",
+      "unicode": "e6a0",
+      "unicode_decimal": 59040
+    },
+    {
+      "icon_id": "20127350",
+      "name": "项目",
+      "font_class": "xiangmu",
+      "unicode": "e682",
+      "unicode_decimal": 59010
+    }
+  ]
+}

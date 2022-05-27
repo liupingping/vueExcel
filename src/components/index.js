@@ -1,0 +1,185 @@
+/** ***
+ * vant 按需引入组建，mac打包找不到样式文件的报错问题
+ * 列表中 已到底啦，和暂无数据组件倒入，减少每个页面组件导入问题，
+ * 将已到底部和暂无数据模块化，保证每个需要页面统一，路径统一样式变化所有页面都改变问题
+ */
+import Vue from 'vue';
+// 配置echarts 主题
+import Element from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+Vue.use(Element, { size: 'small', zIndex: 100 });
+import echarts from 'echarts';
+import DarkTheme from '@/utils/echartsThemeDark';
+import WhiteTheme from '@/utils/echartsThemeWhite';
+echarts.registerTheme('darkTheme', DarkTheme);
+echarts.registerTheme('whiteTheme', WhiteTheme);
+Vue.prototype.$echarts = echarts;
+import {
+  // Button,
+  // Cell,
+  // CellGroup,
+  // Icon,
+  // Image,
+  // Row,
+  // Col,
+  // Popup,
+  // Form,
+  // Checkbox,
+  // CheckboxGroup,
+  // DatetimePicker,
+  // Field,
+  // NumberKeyboard,
+  // PasswordInput,
+  // Picker,
+  // RadioGroup,
+  // Radio,
+  // Rate,
+  // Search,
+  // Slider,
+  // Stepper,
+  // Switch,
+  // SwitchCell,
+  // Uploader,
+  // ActionSheet,
+  // Dialog,
+  // DropdownMenu,
+  // DropdownItem,
+  // Loading,
+  // Notify,
+  // Overlay,
+  // PullRefresh,
+  // SwipeCell,
+  // Toast,
+  // Circle,
+  // Collapse,
+  // CollapseItem,
+  // CountDown,
+  // Divider,
+  // ImagePreview,
+  // Lazyload,
+  // List,
+  // NoticeBar,
+  // Panel,
+  // Progress,
+  // Skeleton,
+  // Step,
+  // Steps,
+  // Sticky,
+  // Swipe,
+  // SwipeItem,
+  // Tag,
+  // Grid,
+  // GridItem,
+  // IndexBar,
+  // IndexAnchor,
+  // NavBar,
+  // Pagination,
+  // Sidebar,
+  // SidebarItem,
+  // Tab,
+  // Tabs,
+  // Tabbar,
+  // TabbarItem,
+  // TreeSelect,
+  // Empty,
+  // AddressEdit,
+  // AddressList,
+  // Area,
+  // Card,
+  // ContactCard,
+  // ContactList,
+  // ContactEdi,
+  // CouponCell,
+  // CouponList,
+  // GoodsAction,
+  // GoodsActionIcon,
+  // GoodsActionButton,
+  // SubmitBar,
+  // Sku
+} from 'vant';
+// Vue.use(NoticeBar);
+// Vue.use(Panel);
+// Vue.use(Progress);
+// Vue.use(Skeleton);
+// Vue.use(Step);
+// Vue.use(Steps);
+// Vue.use(Sticky);
+// Vue.use(Swipe);
+// Vue.use(SwipeItem);
+// Vue.use(Tag);
+// Vue.use(Grid);
+// Vue.use(GridItem);
+// Vue.use(IndexBar);
+// Vue.use(IndexAnchor);
+// Vue.use(NavBar);
+// Vue.use(Pagination);
+// Vue.use(Sidebar);
+// Vue.use(SidebarItem);
+// Vue.use(Tab);
+// Vue.use(Tabs);
+// Vue.use(Tabbar);
+// Vue.use(TabbarItem);
+// Vue.use(TreeSelect);
+// Vue.use(AddressEdit);
+// Vue.use(AddressList);
+// Vue.use(Area);
+// Vue.use(Card);
+// Vue.use(ContactCard);
+// Vue.use(ContactList);
+// Vue.use(ContactEdi);
+// Vue.use(CouponCell);
+// Vue.use(CouponList);
+// Vue.use(GoodsAction);
+// Vue.use(GoodsActionIcon);
+// Vue.use(GoodsActionButton);
+// Vue.use(SubmitBar);
+// Vue.use(Sku);
+
+// import mavonEditor from 'mavon-editor'
+// import 'mavon-editor/dist/css/index.css'
+// Vue.use(mavonEditor)
+
+// Vue.use(Empty);
+// Vue.use(Form);
+// Vue.use(Button);
+// Vue.use(Cell);
+// Vue.use(CellGroup);
+// Vue.use(Icon);
+// Vue.use(Image);
+// Vue.use(Row);
+// Vue.use(Col);
+// Vue.use(Popup);
+// Vue.use(Checkbox);
+// Vue.use(CheckboxGroup);
+// Vue.use(DatetimePicker);
+// Vue.use(Field);
+// Vue.use(NumberKeyboard);
+// Vue.use(PasswordInput);
+// Vue.use(Picker);
+// Vue.use(RadioGroup);
+// Vue.use(Radio);
+// Vue.use(Rate);
+// Vue.use(Search);
+// Vue.use(Slider);
+// Vue.use(Stepper);
+// Vue.use(Switch);
+// Vue.use(SwitchCell);
+// Vue.use(Uploader);
+// Vue.use(ActionSheet);
+// Vue.use(Dialog);
+// Vue.use(DropdownMenu);
+// Vue.use(DropdownItem);
+// Vue.use(Loading);
+// Vue.use(Notify);
+// Vue.use(Overlay);
+// Vue.use(PullRefresh);
+// Vue.use(SwipeCell);
+// Vue.use(Toast);
+// Vue.use(Circle);
+// Vue.use(Collapse);
+// Vue.use(CollapseItem);
+// Vue.use(CountDown);
+// Vue.use(Divider);
+// Vue.use(ImagePreview);
+// Vue.use(Lazyload);
+// Vue.use(List);
