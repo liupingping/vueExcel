@@ -53,7 +53,9 @@
         "fotgotPassword": "Forgot your password?",
         "loginSuccess": "Login successful",
         "outSuccess": "Successful exit",
-        "registeSuccess": "Registration Success"
+        "registeSuccess": "Registration Success",
+        "passwordErrorNum": "密码不正确，请重新输入，还有",
+        "passwordErrorNumTime": "次机会"
     },
     "areanNum": {
         "us": "America",
@@ -427,7 +429,7 @@
         "ERROR_CODE_1006": "订单已结算",
         "ERROR_CODE_1007": "系统异常",
         "ERROR_CODE_1008": "超过下注限码",
-        "ERROR_CODE_1009": "超过单注最大限注",	
+        "ERROR_CODE_1009": "超过单注最大限注",
         "ERROR_CODE_1010": "低于单注最小限注",
         "ERROR_CODE_1011": "超过订单可撤回时间"
     },
@@ -559,7 +561,16 @@
         "winningRules": "Winning Rules Price",
         "myBet": "My Bet",
         "period": "Period",
-        "countdown": "Countdown"
+        "countdown": "Countdown",
+        "touZhuLine": "投注",
+        "touZhuIntroduceLine": "介绍",
+        "queRenTouZhuLine": "确认投注",
+        "qiHaoTouZhuLine": "投注期号:",
+        "jinETouZhuLine": "投注金额:",
+        "neiRongZhuLine": "投注内容:",
+        "fenZhongZhuLine": "分钟K线图",
+        "queRenZhuLine": "确认",
+        "quXiaoZhuLine": "取消"
     },
     "firstRewards": {
         "ruleTitle": "Complimentary mechanism",
@@ -595,13 +606,15 @@
         "orderState0": "未结算",
         "orderState1": "已结算",
         "orderState2": "已撤回",
-        "betSuccess":"下注成功",
-        "betFail":"下注失败",
-        "repeatErr":"没有最近一局的投注信息",
+        "betSuccess": "下注成功",
+        "betFail": "下注失败",
+        "repeatErr": "没有最近一局的投注信息",
         "fiveGameIntro": "五分区块介绍",
         "virtualGameType": "1、游戏类型：区块 后三位",
         "virtualCycle": "2、周期：1 分钟内 1 个周期，每天有1440个时段",
         "virtualIntroduction": "3、介绍： 区块 每1分钟收盘价，以开奖结果为准，后三位之和为开奖结果，每个数字由0到9组成。后三位之和由0-1-2-3-4-5-6-7-8-9-10的数字组成 -11-12-13-14-15-16-17-18-19-20-21-22-23-24-25-26-27。 它总共由 28 个组成。",
-        "winningsCalc": "4、奖金计算：奖金 = 投注金额 x 投注赔率"
+        "winningsCalc": "4、奖金计算：奖金 = 投注金额 x 投注赔率",
+        "locking": "封盘中...",
+        "openResult": "开奖中..."
     }
 }
