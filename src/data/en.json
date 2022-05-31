@@ -182,7 +182,7 @@
         "comfirmPassword": "Please confirm the password",
         "invite": "Please enter the invitation code",
         "verification": "Please enter the verification code",
-        "verify": "Get verification code",
+        "verify": "Verification code",
         "ready": "Already have an account?",
         "login": "Login",
         "phoneError": "Please enter the correct phone number",
@@ -596,6 +596,12 @@
         "orderState1": "已结算",
         "orderState2": "已撤回",
         "betSuccess":"下注成功",
-        "betFail":"下注失败"
+        "betFail":"下注失败",
+        "repeatErr":"没有最近一局的投注信息",
+        "fiveGameIntro": "五分区块介绍",
+        "virtualGameType": "1、游戏类型：区块 后三位",
+        "virtualCycle": "2、周期：1 分钟内 1 个周期，每天有1440个时段",
+        "virtualIntroduction": "3、介绍： 区块 每1分钟收盘价，以开奖结果为准，后三位之和为开奖结果，每个数字由0到9组成。后三位之和由0-1-2-3-4-5-6-7-8-9-10的数字组成 -11-12-13-14-15-16-17-18-19-20-21-22-23-24-25-26-27。 它总共由 28 个组成。",
+        "winningsCalc": "4、奖金计算：奖金 = 投注金额 x 投注赔率"
     }
 }
