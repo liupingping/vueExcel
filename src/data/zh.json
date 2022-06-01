@@ -468,12 +468,17 @@
         "customerService": "Customer Service"
     },
     "dataReport": {
-        "BetFlow": "优惠",
+        "betFlow": "优惠",
         "commission": "佣金",
         "handsel": "彩金",
         "recharge": "充值",
         "reward": "奖金",
         "withdrawCash": "提现",
+        "firstRechargeCount": "首充人数",
+        "teamMoney": "团队余额",
+        "registerCount": "注册人数",
+        "teamCount": "团队数",
+        "betUserCount": "投注人数",
         "datareporttitle": "数据报表",
         "yinglijinge": "盈利金额",
         "jisuangongsi": "盈利计算公式：",
@@ -531,7 +536,7 @@
         "won": "已中奖",
         "lost": "未中奖",
         "waiting": "等待开奖",
-        "bettingNumber": "单号",
+        "bettingNumber": "期号",
         "price": "金额",
         "prize": "奖金",
         "operation": "操作"
@@ -614,6 +619,24 @@
         "virtualIntroduction": "3、介绍： 区块 每1分钟收盘价，以开奖结果为准，后三位之和为开奖结果，每个数字由0到9组成。后三位之和由0-1-2-3-4-5-6-7-8-9-10的数字组成 -11-12-13-14-15-16-17-18-19-20-21-22-23-24-25-26-27。 它总共由 28 个组成。",
         "winningsCalc": "4、奖金计算：奖金 = 投注金额 x 投注赔率",
         "locking": "封盘中...",
-        "openResult": "开奖中..."
+        "openResult": "开奖中...",
+        "bettimeover": "封盘中无法投注",
+        "betNoclick": "请选择下注金额"
+    },
+    "leakRepairing": {
+        "serverException": "服务端异常！",
+        "LoginInvalid": "登录已失效",
+        "anUnknownError": "未知错误",
+        "orderCancelledSuccessfully": "撤销订单成功",
+        "failedTocancelOrder": "撤销订单失败",
+        "pleaseChooseTheOdds": "请选择odds",
+        "submissionSuccessful": "提交成功,等待审核",
+        "uploadedSuccessfully": "上传成功",
+        "uploadFailed": "上传失败",
+        "pleaseEnterYourName": "请输入名字",
+        "pleaseEnterYourID": "请输入ID",
+        "pleaseUploadTheFirstPhoto": "请上传第一张照片",
+        "pleaseUploadTheTwoPhoto": "请上传第二张照片",
+        "busyServer": "服务器繁忙 "
     }
 }
