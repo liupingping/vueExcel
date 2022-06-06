@@ -3,47 +3,30 @@
     <div style="margin-top: 60px">
       <p>1.选择语言,点击按钮导出xlsx文档：</p>
     </div>
-    <van-radio-group
-      style="margin-top: 30px"
-      v-model="radio"
-      direction="horizontal"
-    >
+    <van-radio-group style="margin-top: 30px" v-model="radio" direction="horizontal">
       <van-radio name="0">简体中文</van-radio>
       <van-radio name="1">英文</van-radio>
     </van-radio-group>
 
-    <van-button
-      round
-      block
-      type="primary"
-      size="normal"
-      @click="handleExport('1')"
-      style="margin-top: 20px"
-      >导出xlsx</van-button
-    >
+    <van-button round block type="primary" size="normal" @click="handleExport('1')" style="margin-top: 20px">导出xlsx
+    </van-button>
 
     <div style="margin-top: 70px">
-      <p>2.下面为导出国家语言文件专用：</p>
+      <p>2.下面为导出国家区号文件专用：</p>
     </div>
-    <van-button
-      round
-      block
-      type="primary"
-      size="normal"
-      @click="exportCountry()"
-      style="margin-top: 20px"
-      >导出国家区号</van-button
-    >
+    <van-button round block type="primary" size="normal" @click="exportCountry()" style="margin-top: 20px">导出国家区号
+    </van-button>
 
     <div style="margin-top: 70px">
-      <p>3.下面为导出JSON文件专用：</p>
+      <p>3.下面为导出JSON文件专用(提交.xls文件)：</p>
     </div>
-    <input
-      style="margin-top: 20px"
-      type="file"
-      ref="upload"
-      accept=".xls,.xlsx"
-    />
+    <input style="margin-top: 20px" type="file" ref="upload" accept=".xls,.xlsx" />
+
+    <div style="margin-top: 70px">
+      <p>4.下面为导出EXcel文件专用(提交.Json文件)：</p>
+    </div>
+    <input style="margin-top: 20px" type="file" ref="uploadJson" accept=".json" />
+
   </div>
 </template>
 
@@ -76,6 +59,11 @@ export default {
       //绑定监听表格导入事件
       this.readExcel(e);
     });
+
+    this.$refs.uploadJson.addEventListener("change", (e) => {
+      //绑定监听表格导入事件
+      this.readJson(e);
+    });
   },
 
   methods: {
@@ -98,11 +86,11 @@ export default {
       let dataList = [];
       var langInfo = country;
       langInfo.forEach((prop1) => {
-          var tempObj = { key1: "", key2: "", key3: "" };
-          tempObj.key3 = prop1.name;
-          tempObj.key2 = prop1.number;
-          tempObj.key1 = prop1.countryName;
-          dataList.push(tempObj);
+        var tempObj = { key1: "", key2: "", key3: "" };
+        tempObj.key3 = prop1.name;
+        tempObj.key2 = prop1.number;
+        tempObj.key1 = prop1.countryName;
+        dataList.push(tempObj);
       });
       exportJson2Excel(
         columns.map((n) => n.title),
@@ -110,8 +98,53 @@ export default {
         dataList,
         "国家区号"
       );
+    },
 
-
+    readJson(e) {
+      //表格导入
+      var that = this;
+      let files = e.target.files;
+      if (files.length <= 0) {
+        //如果没有文件名
+        console.log("没有文件名");
+        return false;
+      } else if (!/\.(json)$/.test(files[0].name.toLowerCase())) {
+        console.log("上传格式不正确，请上传json格式");
+        return false;
+      }
+      const fileReader = new FileReader();
+      fileReader.onload = (ev) => {
+        try {
+          let columns = [
+            { title: "模块", key: "key1" },
+            { title: "字段", key: "key2" },
+            { title: "字段值", key: "key3" },
+          ];
+          const data = JSON.parse(ev.target.result);
+          let dataList = [];
+          var langInfo = data;
+          Object.keys(langInfo).forEach((prop1) => {
+            var orgInfo = langInfo[prop1];
+            Object.keys(orgInfo).forEach((prop2) => {
+              var tempObj = { key1: "", key2: "", key3: "" };
+              tempObj.key3 = orgInfo[prop2];
+              tempObj.key2 = prop2;
+              tempObj.key1 = prop1;
+              dataList.push(tempObj);
+            });
+          });
+          exportJson2Excel(
+            columns.map((n) => n.title),
+            columns.map((n) => n.key),
+            dataList,
+            langInfo.language.name
+          );
+          this.$refs.uploadJson.value = "";
+        } catch (e) {
+          return false;
+        }
+      };
+      fileReader.readAsText(files[0]);
     },
 
     readExcel(e) {
