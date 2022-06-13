@@ -222,7 +222,7 @@ export default {
     //     dataList,
     //     langInfo.language.name
     //   );
-    // },
+    },
   },
 };
 </script>
