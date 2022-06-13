@@ -8,7 +8,7 @@
       <van-radio name="1">英文</van-radio>
     </van-radio-group>
 
-    <van-button round block type="primary" size="normal" @click="handleExport('1')" style="margin-top: 20px">导出xlsx
+    <!-- <van-button round block type="primary" size="normal" @click="handleExport('1')" style="margin-top: 20px">导出xlsx -->
     </van-button>
 
     <div style="margin-top: 70px">
