@@ -8,8 +8,8 @@
       <van-radio name="1">英文</van-radio>
     </van-radio-group>
 
-    <van-button round block type="primary" size="normal" @click="handleExport('1')" style="margin-top: 20px">导出xlsx
-    </van-button>
+    <!-- <van-button round block type="primary" size="normal" @click="handleExport('1')" style="margin-top: 20px">导出xlsx
+    </van-button> -->
 
     <div style="margin-top: 70px">
       <p>2.下面为导出国家区号文件专用：</p>
