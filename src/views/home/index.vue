@@ -8,8 +8,8 @@
       <van-radio name="1">英文</van-radio>
     </van-radio-group>
 
-    <!-- <van-button round block type="primary" size="normal" @click="handleExport('1')" style="margin-top: 20px">导出xlsx 
-     </van-button> -->
+    <van-button round block type="primary" size="normal" @click="handleExport('1')" style="margin-top: 20px">导出xlsx
+    </van-button>
 
     <div style="margin-top: 70px">
       <p>2.下面为导出国家区号文件专用：</p>
@@ -199,29 +199,29 @@ export default {
     },
 
     handleExport(type) {
-    //   let columns = [
-    //     { title: "模块", key: "key1" },
-    //     { title: "字段", key: "key2" },
-    //     { title: "字段值", key: "key3" },
-    //   ];
-    //   let dataList = [];
-    //   var langInfo = this.getLanDataByID(this.radio);
-    //   Object.keys(langInfo).forEach((prop1) => {
-    //     var orgInfo = langInfo[prop1];
-    //     Object.keys(orgInfo).forEach((prop2) => {
-    //       var tempObj = { key1: "", key2: "", key3: "" };
-    //       tempObj.key3 = orgInfo[prop2];
-    //       tempObj.key2 = prop2;
-    //       tempObj.key1 = prop1;
-    //       dataList.push(tempObj);
-    //     });
-    //   });
-    //   exportJson2Excel(
-    //     columns.map((n) => n.title),
-    //     columns.map((n) => n.key),
-    //     dataList,
-    //     langInfo.language.name
-    //   );
+      let columns = [
+        { title: "模块", key: "key1" },
+        { title: "字段", key: "key2" },
+        { title: "字段值", key: "key3" },
+      ];
+      let dataList = [];
+      var langInfo = this.getLanDataByID(this.radio);
+      Object.keys(langInfo).forEach((prop1) => {
+        var orgInfo = langInfo[prop1];
+        Object.keys(orgInfo).forEach((prop2) => {
+          var tempObj = { key1: "", key2: "", key3: "" };
+          tempObj.key3 = orgInfo[prop2];
+          tempObj.key2 = prop2;
+          tempObj.key1 = prop1;
+          dataList.push(tempObj);
+        });
+      });
+      exportJson2Excel(
+        columns.map((n) => n.title),
+        columns.map((n) => n.key),
+        dataList,
+        langInfo.language.name
+      );
     },
   },
 };
